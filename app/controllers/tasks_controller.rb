@@ -1,4 +1,8 @@
 class TasksController < ApplicationController
+  def
+    @tasks = Task.all
+  end
+
   def new
     @task = Task.new
   end
